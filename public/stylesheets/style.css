@@ -1,0 +1,646 @@
+body{
+  margin: 0;
+}
+
+*{
+  margin: 0;
+}
+
+/* Nave bar start !!!! */
+
+
+.navbar{
+  background-color: rgb(228, 228, 15);
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  z-index: 1;
+  bottom: 87%;
+  
+  
+  
+ 
+}
+
+
+
+/* Admin Nave bar start !!!! */
+
+
+
+.admin-navbar{
+  background-color: rgb(15, 170, 149);
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  bottom: 87%;
+
+  
+  
+  
+ 
+}
+
+.admin-navbar{
+  
+  color :whitesmoke;
+  font-size: 33px;
+  padding: 40px;
+  display: flex;
+  position: fixed;
+  
+  
+  
+}
+
+
+
+
+
+.admin-div input{
+  position: fixed;
+  left: 323px;
+  bottom: 90%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 10px 10px;
+  width: 800px;
+  font-size: 20px;
+}
+
+#all-product{
+  position: fixed;
+  left: 1200px;
+  top: 7%;
+  
+}  
+
+
+#all-oders{
+  position: fixed;
+  left: 1340px;
+  top: 7%;
+  
+}  
+
+#all-users{
+  position: fixed;
+  left: 1450px;
+  top: 7%;
+  
+}  
+
+/* Admin navabar End*/
+
+
+
+
+
+/*Start user navbar .....................................................*/ 
+
+.span-navbar{
+  
+  color :whitesmoke;
+  font-size: 33px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+.box input{
+  position: fixed;
+  left: 323px;
+  bottom: 90%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 10px 10px;
+  width: 800px;
+  font-size: 20px;
+  
+  
+}
+#register{
+  position: fixed;
+  left: 1200px;
+  bottom: 90%;
+  
+}
+#cart{
+  position: fixed;
+  left: 1300px;
+  bottom: 90%;
+  
+}
+
+
+
+#cart-img{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 1370px;
+  bottom: 89%;
+  display: block;
+}
+
+#btn-signup{
+  display: block;
+  position: fixed;
+  left: 1500px;
+  bottom: 89%;
+}
+button{
+  border:3px solid white
+
+}
+
+#btn-logout{
+  display: block;
+  position: fixed;
+  left: 1600px;
+  bottom: 89%;
+}
+
+
+ a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.row{
+  position: relative;
+  top: 150px;
+}
+
+
+/*end user navbar .....................................................*/ 
+
+
+
+/*Start header.....................................................*/
+
+
+
+.div-cart{
+  display: inline;
+  position: relative;
+  left: 40px;
+  top: 60px;
+width: 300px;
+height: 400px;
+background-color: rgb(248, 241, 241);
+}
+
+
+#btn-addcart{
+  position: relative;
+  
+  top: 68px;
+  left: 127px;
+
+}
+
+
+img{
+  width: 301px;
+  height: 272px;
+}
+
+.div-cart p{
+  text-align: center;
+}
+
+
+
+
+.signup {
+  width: 400px;
+  height: 300px;
+  
+  position: absolute;
+  left: 800px;
+  top: 164px;
+  
+}
+
+
+.signup input{
+ border-radius: 10px 10px  10px; 
+ padding-top: 5px;
+ outline: none;
+ border: none;
+
+}
+.signup h1 {
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 900;
+}
+
+.signup button{
+  position: relative;
+  left: 180px;
+  top: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+
+.login{
+ margin-left: 700px;
+ margin-top: 200px;
+} 
+
+.login button{
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  left: 140px;
+}
+
+.login h1{
+  position: relative;
+  left: 140px;
+}
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  width: 400px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 45px;
+  width: 500px;
+  flex: 0 0 200px;
+  margin-left: 10px;
+}
+
+
+.row{
+  display: inline-block;
+  position: absolute;
+  justify-content: space-between;
+}
+
+
+
+
+
+/*End users header.....................................................*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.....................Media query.................................*/
+
+
+
+
+
+
+/*mobile device 
+***********************************************
+*/
+
+
+@media (max-width:530px){
+
+.navbar{
+  top: 0;
+}
+
+  .span-navbar{
+    font-size: 25px;
+    margin-top:35px;
+  }
+  .box input{
+  position: absolute;
+  left: 30px;
+  bottom: 50%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 5px 5px;
+  width: 250px;
+  font-size: 15px;
+  
+  }
+  #register{
+  position: absolute;
+  left: 180px;
+  bottom: 12%;
+  }
+  #cart{
+    position: absolute;
+    left: 280px;
+    bottom: 12%;
+  }
+  #cart-img{
+  display: none;
+  }
+
+#btn-signup{
+  display: none;
+}
+#btn-logout{
+  display: none;
+}
+
+}
+
+
+/*tab device 
+***********************************************
+*/
+@media (min-width:530px) and (max-width:798px){
+ 
+  .navbar{
+    top: 0;
+  }
+ 
+  .span-navbar{
+    font-size: 25px;
+    padding: 0;
+  }
+  
+  .navbar{
+    background-color: rgb(121, 235, 14);
+  }
+  .box input{
+    position: absolute;
+    left: 170px;
+    bottom: 40%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 5px 5px;
+  width: 350px;
+  font-size: 15px;
+
+}
+
+#register{
+  position: absolute;
+  left: 300px;
+  bottom: 15%;
+  }
+  #cart{
+    position: absolute;
+    left: 400px;
+    bottom: 15%;
+  }
+  #cart-img{
+    display: none;
+    }
+  #btn-signup{
+    display: none;
+  }
+  #btn-logout{
+    display: none;
+  }
+
+}
+
+/*mediam device 
+***********************************************
+*/
+@media (min-width:798px) and (max-width:1400px){
+  
+  .navbar{
+  
+    top: 0;
+  }
+  
+  
+  .span-navbar{
+    font-size: 25px;
+    padding: 0;
+margin-left: 10px;
+  }
+  
+  .navbar{
+    background-color:red
+  }
+  .box input{
+    position: absolute;
+    left: 200px;
+    bottom: 27%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 5px 5px;
+  width: 600px;
+  font-size: 15px;
+
+}
+#register{
+  position: absolute;
+  left: 400px;
+  bottom: 6%;
+  }
+  #cart{
+    position: absolute;
+    left: 500px;
+    bottom: 6%;
+  }
+
+  #cart-img{
+    display: none;
+    }
+  #btn-signup{
+    display: none;
+  }
+  #btn-logout{
+    display: none;
+  }
+}
+
+
+
+/*large device 
+***********************************************
+*/
+
+@media (min-width:1400px) and (max-width:1800px){
+  .navbar{
+    top: 0;
+  }
+ 
+ 
+ 
+  .span-navbar{
+    font-size: 25px;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .navbar{
+    background-color:rgb(255, 7, 201)
+  }
+  .box input{
+    position: absolute;
+    left: 150px;
+    bottom: 27%;
+  border: none;
+  border-radius: 20px 20px 20px;
+  outline: none;
+  padding: 5px 5px;
+  width: 700px;
+  font-size: 15px;
+
+}
+
+#register{
+  position: absolute;
+  left: 1000px;
+  bottom: 6%;
+  }
+  #cart{
+    position: absolute;
+    left: 1100px;
+    bottom: 6%;
+  }
+
+  #cart-img{
+    display: none;
+    }
+  #btn-signup{
+    display: none;
+  }
+  #btn-logout{
+    display: none;
+  }
+}
+
+.container{
+  margin-top: 60px;
+}
+
+.row{
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+/*Media query admin page
+***********************************************
+*/
+
+
+
+
+
+/*mobile device 
+***********************************************
+*/
+
+
+@media (max-width:600px){
+  .admin-navbar{
+    background-color: rgb(245, 197, 39);
+    width: 100%;
+    position: fixed;
+    height: 130px;
+    bottom: 84%;
+    
+  }
+
+  .admin-navbar{
+  
+    color :whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    
+    
+  }
+
+  .admin-div input{
+    position: fixed;
+    left: 150px;
+    bottom: 90%;
+    border: none;
+    border-radius: 20px 20px 20px;
+    outline: none;
+    padding: 5px 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+
+/*tab device 
+***********************************************
+*/
+
+@media (min-width:600px) and  (max-width:1000px){
+  
+  
+  .admin-navbar{
+    background-color: rgb(130, 117, 241);
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    bottom: 84%;
+    
+    
+  }
+  
+  
+  .admin-navbar{
+  
+    color :whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+  
+    
+  }
+
+  .admin-div input{
+    position: fixed;
+    left: 100px;
+    bottom: 90%;
+    border: none;
+    border-radius: 20px 20px 20px;
+    outline: none;
+    padding: 5px 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
