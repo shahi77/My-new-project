@@ -5,7 +5,7 @@
 
 
 
-<section class="container pt-5">
+<section class="containeradmin view-product">
    <a href="admin/add-products" class="btn-primary pl-5">Add products</a> 
 
 
@@ -29,10 +29,10 @@
          
       <td scope="row">1</th>
      
-      <td>{{this.name}}</td>
-      <td>{{this.category}}</td>
-      <td>{{this.price}}</td>
-      <td><img src="{{this.image}}" style="width: 150px; height:100px" alt=""></td>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Price}}</td>
+      <td><img src="/product-images/{{this._id}}.png" style="width: 150px; height:100px" alt=""></td>
     </tr>
     {{/each}}
     
