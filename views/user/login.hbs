@@ -7,20 +7,46 @@
     <title>Document</title>
 </head>
 <body style="background-image: url(https://www.kotak.com/content/dam/Kotak/product_card_images/how-credit-cards-enhance-your-shopping-experience.jpg); background-size:cover" >
-    <div class="login">
-        <h1>Login Form</h1>
-    <form  action="/login" method="POST">
-    <label>Email</label>
-<input type="email" placeholder="Email" name="email" id=""><br>
-<label >Password</label>
-<input type="password" placeholder="Password"><br>
+   
 
-<button>Login</button>
-
+<div class="user-login">
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+<div class="">
+  <label for="formGroupExampleInput" class="form-label" >Email</label>
+  <input type='email' name="email" class="form-control" id="formGroupExampleInput" placeholder="Email" required>
 </div>
-
+<div class="">
+  <label for="formGroupExampleInput2" class="form-label">Password</label>
+  <input type="password" name="password" class="form-control" id="formGroupExampleInput2" placeholder="Password" required>
+</div>
+<button class="btn-user">Login</button>
 </form>
+<a href="/signupRq">Create new account?</a>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

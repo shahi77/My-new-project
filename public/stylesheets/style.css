@@ -205,13 +205,7 @@ background-color: rgb(248, 241, 241);
 }
 
 
-#btn-addcart{
-  position: relative;
-  
-  top: 68px;
-  left: 127px;
 
-}
 
 
 img{
@@ -251,23 +245,31 @@ width: 700px;
 }
 
 
-.login{
+.user-login{
+  width: 500px;
+  height: 500px;
  margin-left: 700px;
  margin-top: 200px;
 } 
 
-.login button{
+.btn-user{
   width: 200px;
   height: 50px;
   position: relative;
   top: 10px;
-  left: 140px;
+  left: 150px;
 }
 
-.login h1{
-  position: relative;
-  left: 140px;
+.user-login a{
+position: relative;
+top: 30px;
 }
+
+.user-login h1{
+  position: relative;
+  text-align: center;
+  }
+
 label {
   display: flex;
   flex-direction: row;
@@ -340,6 +342,31 @@ input {
   top: 0;
 }
 
+.user-login{
+  width: 80%;
+  height: 1000px;
+ margin-left: 5%;
+ margin-top: 100px;
+} 
+
+.btn-user{
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  left: 18%;
+}
+
+.user-login a{
+position: relative;
+top: 30px;
+}
+
+.user-login h1{
+  position: relative;
+  text-align: center;
+  }
+
 .signup-form{
   margin-left: 30px;
   margin-top: 100px;
@@ -375,6 +402,7 @@ width: 75%;
   outline: none;
   padding: 5px 5px;
   width: 250px;
+  height: 35px;
   font-size: 15px;
   
   }
@@ -399,7 +427,9 @@ width: 75%;
   display: none;
 }
 
+
 }
+
 
 
 /*tab device 
@@ -410,6 +440,32 @@ width: 75%;
   .navbar{
     top: 0;
   }
+
+
+  .user-login{
+    width: 400px;
+    height: 500px;
+   margin-left: 100px;
+   margin-top: 100px;
+  } 
+  
+  .btn-user{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 15%;
+  }
+  
+  .user-login a{
+  position: relative;
+  top: 30px;
+  }
+  
+  .user-login h1{
+    position: relative;
+    text-align: center;
+    }
 
   .signup-form{
     margin-left: 70px;
@@ -485,6 +541,32 @@ width: 75%;
   
     top: 0;
   }
+
+  .user-login{
+    width: 80%;
+    height: 500px;
+   margin-left: 5%;
+   margin-top: 100px;
+  } 
+  
+  
+  .user-login a{
+  position: relative;
+  top: 30px;
+  }
+  
+  .user-login h1{
+    position: relative;
+    text-align: center;
+    }
+
+    .btn-user{
+      width: 200px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      left: 40%;
+    }
 
   .signup-form{
     margin-left: 100px;
@@ -562,6 +644,36 @@ margin-left: 10px;
   .navbar{
     top: 0;
   }
+
+
+
+
+
+  .user-login{
+    width: 50%;
+    height: 500px;
+   margin-left: 25%;
+   margin-top: 100px;
+  } 
+  
+  
+  .user-login a{
+  position: relative;
+  top: 30px;
+  }
+  
+  .user-login h1{
+    position: relative;
+    text-align: center;
+    }
+
+    .btn-user{
+      width: 200px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      left: 40%;
+    }
  
   .signup-form{
     margin-left: 150px;
