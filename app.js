@@ -10,7 +10,9 @@ var hbs=require('express-handlebars')
 var app = express();
 var expressFileUpload=require('express-fileupload')
 var db=require('./config/connection')
+var session=require('express-session')
 var mongodb=require('mongodb')
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -21,7 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressFileUpload())
-
+app.use(session({secret:'key',cookie:{maxAge:600000}}))
 
 db.connect((err)=>{
   if(err){
@@ -31,7 +33,7 @@ db.connect((err)=>{
   }
 })
 app.use('/', userRouter);
-app.use('/admin', adminRouter);
+app.use('/', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

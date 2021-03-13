@@ -16,13 +16,20 @@ body{
   position: fixed;
   z-index: 1;
   bottom: 87%;
-  
+  top:0;
   
   
  
 }
 
-
+#account{
+  position: relative;
+  left:510%;
+  top: -80px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  color: rgb(10, 10, 10);
+}
 
 /* Admin Nave bar start !!!! */
 
@@ -134,7 +141,7 @@ body{
   width: 800px;
   font-size: 20px;
   
-  
+  top:50px;
 }
 #register{
   position: fixed;
@@ -142,22 +149,18 @@ body{
   bottom: 90%;
   
 }
-#cart{
-  position: fixed;
-  left: 1300px;
-  bottom: 90%;
-  
-}
 
 
 
-#cart-img{
+
+.cart-icon{
   width: 50px;
   height: 50px;
   position: fixed;
-  left: 1370px;
-  bottom: 89%;
+  left: 1100px;
+  bottom: 80%;
   display: block;
+  font-size: 25px;
 }
 
 
@@ -191,6 +194,36 @@ button{
 
 
 /*Start header.....................................................*/
+
+/*pop window start*/
+#cart{
+  position: absolute;
+  left: 1300px;
+  top: 50px;
+  }
+  
+  #cart:hover{
+      cursor: pointer;
+      color: blue;
+      }
+  
+  .cart:hover{
+      cursor: pointer;
+      color: rgb(60, 221, 101);
+      }
+  .popup{
+      width: 500px;
+      height: 650%;
+      background-color: rgb(249, 249, 249);;
+      position: absolute;
+      right: 0;
+      display: none;
+      border: solid 5px rgb(238, 217, 217);
+  }
+
+
+/*pop window end*/
+
 
 
 
@@ -308,7 +341,106 @@ input {
 
 
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+/* *{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+  
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
 
+.full{
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
 
 
@@ -340,6 +472,9 @@ input {
 
 .navbar{
   top: 0;
+}
+.full{
+  display: block;
 }
 
 .user-login{
@@ -392,10 +527,11 @@ width: 75%;
   .span-navbar{
     font-size: 25px;
     margin-top:35px;
+    margin-left: 180px;
   }
   .box input{
   position: absolute;
-  left: 30px;
+  left: 100px;
   bottom: 50%;
   border: none;
   border-radius: 20px 20px 20px;
@@ -410,11 +546,13 @@ width: 75%;
   position: absolute;
   left: 180px;
   bottom: 12%;
+  display: none;
   }
   #cart{
     position: absolute;
     left: 280px;
     bottom: 12%;
+    display: none;
   }
   #cart-img{
   display: none;
@@ -435,7 +573,7 @@ width: 75%;
 /*tab device 
 ***********************************************
 */
-@media (min-width:530px) and (max-width:798px){
+@media (min-width:530px) and (max-width:872px){
  
   .navbar{
     top: 0;
@@ -492,14 +630,22 @@ width: 75%;
   .span-navbar{
     font-size: 25px;
     padding: 0;
+    margin-left: 200px;
+    margin-top: 70px;
   }
   
+  .full{
+    display: block;
+  }
+
+
   .navbar{
     background-color: rgb(121, 235, 14);
   }
   .box input{
     position: absolute;
     left: 170px;
+    top:20px;
     bottom: 40%;
   border: none;
   border-radius: 20px 20px 20px;
@@ -514,12 +660,9 @@ width: 75%;
   position: absolute;
   left: 300px;
   bottom: 15%;
+  display: none;
   }
-  #cart{
-    position: absolute;
-    left: 400px;
-    bottom: 15%;
-  }
+  
   #cart-img{
     display: none;
     }
@@ -535,7 +678,7 @@ width: 75%;
 /*mediam device 
 ***********************************************
 */
-@media (min-width:798px) and (max-width:1400px){
+@media (min-width:872px) and (max-width:1400px){
   
   .navbar{
   
@@ -603,7 +746,7 @@ margin-left: 10px;
   .box input{
     position: absolute;
     left: 200px;
-    bottom: 27%;
+    top: 32px;
   border: none;
   border-radius: 20px 20px 20px;
   outline: none;
@@ -617,17 +760,17 @@ margin-left: 10px;
   left: 400px;
   bottom: 6%;
   }
+  
+
   #cart{
     position: absolute;
-    left: 500px;
-    bottom: 6%;
-  }
-
-  #cart-img{
-    display: none;
+    left: 490px;
+    top: 88px;
     }
-  #btn-signup{
-    display: none;
+
+  
+  #account{
+    top:30px
   }
   #btn-logout{
     display: none;
@@ -727,14 +870,12 @@ margin-left: 10px;
   #cart{
     position: absolute;
     left: 1100px;
-    bottom: 6%;
+    top: 94px;
   }
 
-  #cart-img{
-    display: none;
-    }
-  #btn-signup{
-    display: none;
+  #account{
+    top: 28px;
+    left: 1250px;
   }
   #btn-logout{
     display: none;
@@ -948,6 +1089,9 @@ margin-left: 10px;
   }
   
 }
+
+
+
 
 
 

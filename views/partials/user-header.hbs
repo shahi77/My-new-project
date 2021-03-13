@@ -12,22 +12,78 @@
   <div class="box">
     <span class="span-navbar"><strong>MYNTRA</strong></span>
     <input type="text" placeholder="Search...">
-  <span id="register"><a href="https://www.figma.com/file/7O6wJisVIzBvizb2do3qyW/Untitled">Register </a></span>
+    <i style="position: absolute; top: 60px; left: 1090px; font-size: 25px;" class="fas fa-search"></i>
 
-  <span id="cart"><a href="https://www.youtube.com/watch?v=Hv0AiWFAiRg&t=381s"> Cart</a></span>
+  <span id="register"><a href="/login">Register </a></span>
 
-  <a href=""><img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ED2vW7yAzDNS7A-ZrleUQmQZTGHeMEy-uw&usqp=CAU"
-      id="cart-img" alt="hhhhh"></a>
+  
+   <i id="cart"  class="fas fa-shopping-cart cart-icon"></i>
+    
+    <div class="popup">
+        <i class="fas fa-backspace cart" style="font-size: 40px; color: red;"></i>
 
+<p style="text-align: center;">Card is emty boos 
+</p>
+
+<i style="font-size: 75px; margin-top: 150px; margin-left: 200px; color: rgb(128, 51, 41);" class="fas fa-ambulance"></i>
+    </div>
+
+    <script>
+      document.getElementById('cart').addEventListener('click',function(){
+    document.querySelector('.popup').style.display='block'
+})
+
+document.querySelector('.cart').addEventListener('click',function(){
+    document.querySelector('.popup').style.display='none'
+})
+    </script>
+
+<span id="account">
+  {{#if users}}
+  {{users.fname}}
+  {{/if}}
+  </span>
+ 
  
 
-  <button id="btn-logout">Logout</button>
-
+ 
+{{#if users}}
+  <button id="btn-logout"><a href="/logout">Logout</a></button>
+  {{/if}}
 </nav>
 
+ 
+  <div class="full">
+  
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      
+    <header>
+      {{#if users}}
+      {{users.fname}} {{users.lname}}
+      {{else}}
+      Account
+       {{/if}}
+      </header>
+     
+  <ul>
+<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+<li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+<li><a href="#"><i class="fas fa-sliders-h"></i>Contact</a></li>
+{{#if users}}
+<li><a href="/logout"><i class="far fa-envelope"></i>Logout</a></li>
+{{/if}}
+</ul>
+</div>
 
-
+</div>
 </body>
 </html>
 
